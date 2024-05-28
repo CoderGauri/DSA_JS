@@ -36,3 +36,32 @@ for (let i = 0; i < 3; i++) {
     console.log(row);
 }
 
+/*pattern 2
+* 
+* *
+* * **/
+function printPattern1(n) {
+for(let i=0; i<n; i++){
+    let row = "";
+    for(let j=0; j<= i; j++){
+        row += "* ";
+    }
+    console.log(row)
+}
+}
+printPattern1(4)
+
+/*pattern 3
+1
+1 2 
+1 2 3 */
+function printPattern2(n){
+    for(let i=0; i<n; i++){
+        let row = "";
+        for (let j=1 ;j<=i+1; j++ ){
+            row += j;
+        }
+        console.log(row)
+    }
+}
+printPattern2(4);
